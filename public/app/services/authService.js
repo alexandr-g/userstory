@@ -78,7 +78,10 @@ angular.module('authService', [])
 
 		if(response.status == 403)
 			$location.path('/login');
-		
+
 		return $q.reject(response);
 	}
+
+	return interceptorFactory;
+
 });
