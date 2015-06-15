@@ -1,4 +1,4 @@
-angular.module('mainCrtl', []);
+angular.module('mainCrtl', [])
 
 .controller('MainController', function($rootScope, $location, Auth) {
 
