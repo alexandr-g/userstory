@@ -10,9 +10,11 @@
 	
 	<!-- Services -->
 	<script type="text/javascript" src="app/services/authService.js"></script>
+	<script type="text/javascript" src="app/services/userService.js"></script>
 
 	<!-- Controllers -->
 	<script type="text/javascript" src="app/controllers/mainCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/userCtrl.js"></script>
 
 	<!-- Routes -->
 	<script type="text/javascript" src="app/app.routes.js"></script>
@@ -33,7 +35,8 @@
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
-				<li ng-if="!main.loggedIn"><a href="/login"></a></li>
+				<li ng-if="!main.loggedIn"><a href="/login">Login</a></li>
+				<li ng-if="!main.loggedIn"><a href="/signup">Sign Up</a></li>
 				<li ng-if="main.loggedIn"><a href="#">Hello {{ main.user.username }}</a></li>
 				<li ng-if="main.loggedIn"><a href="#" ng-click="main.doLogout()">Logout</a></li>
 			</ul>
